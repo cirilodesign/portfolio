@@ -1,0 +1,200 @@
+:root {
+    --yellow: #FEE250;
+    --gray: #434343;
+    --blue: #E1E8F6;
+    --font: 'Gilroy', sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: var(--font);
+    color: #333;
+    line-height: 1.6;
+  }
+
+  header {
+    background: #434343;
+    color: #fff;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+  }
+
+  section {
+    padding: 4rem 2rem;
+  }
+
+  nav {
+    li {
+        list-style: none;
+    }
+
+    a {
+      color: #fff;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  }
+  
+
+  .hero {
+    background-image: url(../assets/images/Capa.png);
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    text-align: left;
+
+    div {
+        width: 35%;
+        padding: 4rem;
+    }
+  }
+
+  .sobre {
+    padding: 2rem 4rem;
+
+
+
+    div {
+        width: 90%;
+        padding: 4rem;
+    }
+
+    figure {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+  }
+
+  .principios {
+    padding: 2rem 4rem;
+
+    div {
+        width: 100%;
+        padding: 1rem 4rem;
+        gap: 1rem;
+    }
+  }
+
+
+
+  h1, h2 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .title-center{
+    text-align: center;
+  }
+
+  #tipografia img {
+    height: 600px;
+  }
+
+  #login div {
+    width: 50%;
+  }
+
+  #condominio div {
+    width: 70%;
+  }
+
+  #tom-de-voz {
+    background-color: #282829;
+    color: #ececec;
+    
+    img{
+      width: 100%;
+    }
+  }
+
+  .nav-footer{
+
+    li{list-style: none;}
+  }
+
+  .colors {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .color-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-weight: bold;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .gallery img {
+    max-width: 100%;
+    height: auto;
+    flex: 1 1 300px;
+  }
+
+  footer {
+    background: #f5f5f5;
+    padding: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+  }
+
+  footer nav a {
+    margin: 0 1rem;
+    color: #888;
+    text-decoration: none;
+  }
+
+  @media (max-width: 800px) {
+
+    header {
+        position: relative;
+    }
+
+    .hero, #login, #home, #condominio, #servicos  {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        div {width: 100%;}
+      }
+
+    .sobre {
+        width: 100%;
+        padding: 0;
+
+        img {
+            width: auto;
+            height: 300px;
+        }
+    }
+    
+    #tipografia img {height: 100%;}
+    #tom-de-voz img {height: 100%;}
+
+    #principios div {
+      width: 100%;
+      padding: 1rem
+    }
+
+    #telas img {width: 100%; }
+}
