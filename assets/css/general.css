@@ -99,85 +99,6 @@
     }
   }
 
-/* 
-.article {
-    width: 100%;
-    box-sizing: border-box;
-    background-color: #ececec; 
-    padding: 1rem 7.5rem 4rem;
-    gap: 2.5rem;
-
-    div {margin-top: 2rem;}
-}
-
-.article figure, section{
-    width: 50%;
-    height: 100%;
-}
-
-.bento-cards {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 4rem 7.5rem;
-    gap: 2.5rem;
-
-    section {
-        width: 100%;
-        gap: 2rem;
-
-        .col {
-            gap: 2rem;
-            width: 100%;
-        }
-    }
-}
-
-.skills, footer {
-    width: 100%;
-    padding: 4rem 8rem;
-    box-sizing: border-box;
-    gap: 2rem;}
-
-
-.skills {
-
-    li {
-        font-family: 'Inter', Arial, Helvetica, sans-serif;
-        font-weight: 400;
-        font-size: 1.1rem;
-        line-height: 150%;
-        color: #4b4b4b;
-    }
-
-    section, div {
-        width: 100%;
-        gap: 2rem;
-    }
-    
-    .card {
-        background-color: #ffffff;
-        gap: 1rem;
-        padding: 1.5rem;
-    }
-
-}
-
-
-
-
-
-
-
-
-
-    footer {
-    background: #f5f5f5;
-    padding: 2rem;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #888;
-  } */
-
 
 /* Responsive */
 @media (min-width: 360px) {
@@ -237,16 +158,10 @@
         .skills {
             .card {width: 100%;}
         }
-
-        /* .bento-cards {
-            .overlay {display: none;}
-        } */
     }
 
 }
 
-@media (min-width: 375px) {}
-@media (min-width: 411px) {}
 @media (min-width: 768px) {
     .menu {height: auto;}
 
@@ -342,16 +257,3 @@
         }
     } 
 }
-@media (min-width: 1200px){}
-@media (min-width: 1400px) {}
-
-/* .project {
-    background-size: cover;
-    background-position: bottom left;
-    position: relative;
-    color: #171717;
-    height: 100%;
-    min-height: 240px;
-}          
-
- */
