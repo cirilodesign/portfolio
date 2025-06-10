@@ -22,9 +22,9 @@
 
 </head>
 
-<body>
+<body class="flex flex-col">
     <!-- Hero -->
-     <header class="flex flex-col">
+    <header class="flex flex-col">
         
         <!-- Menu -->
         <section class="flex menu">
@@ -37,18 +37,18 @@
                     <li><a href="#portfolio">Portfólio</a></li>
                     <li><a href="#competencias">Competências</a></li>
                     <li><a href="#formacao">Formação</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="https://wa.me/+5511984889345">Contato</a></li>
                 </ul>
             </nav>
         </section>
 
-
+        <!-- Hero -->
         <section class="flex hero">
-            <header class="flex flex-col justify-center">
-                <div>
+            <header class="flex justify-center">
+                <div class="flex flex-col justify-center">
                     <h3>EU SOU</h3>
                     <h1>CIRILO SOUZA</h1>
-                    <span>Product Manager & UX Design Lead</span>
+                    <span>Product Manager <br>& UX Design Lead</span>
                 </div>
             </header>
             <figure>
@@ -57,24 +57,26 @@
         </section>
      </header>
 
-     <!-- Main content -->
+    
     <main class="flex flex-col">
-
-        <!-- Main slogan -->
-        <section class="marquee flex justify-center" style="background-color: #ECECEC;"> 
-            <h2>Conecto UX, Produto e Negócios para transformar <br>ideias em experiências digitais de alto impacto.</h2>
+        
+        <!-- Titulo chamativo -->
+        <section class="marquee"> 
+            <h2>
+                Conecto UX, Produto e Negócios para transformar <br>ideias em experiências digitais de alto impacto.
+            </h2>
         </section>
 
-        <!-- About me -->
-        <article class="flex flex-row items-center justify-center article" id="sobre">
+        <!-- Sobre -->
+        <section class="flex flex-row items-center justify-center about" id="sobre">
             <figure>
                 imagem
             </figure>
-            <section>
+            <section class="flex flex-col">
                 <header>
                     <h2>Profissional multidisciplinar</h2>
                 </header>
-                <div >
+                <div>
                     <p>
                         Sou Cirilo Souza, profissional multidisciplinar com mais de 15 anos de experiência em tecnologia, design e gestão de produtos digitais. Iniciei minha trajetória em infraestrutura de TI, o que me deu uma base técnica sólida para transitar com fluidez entre equipes de engenharia e negócios. Ao longo dos anos, mergulhei no universo do UX/UI, liderando projetos estratégicos e desenvolvendo Design Systems com foco no usuário. 
                         <br><br>
@@ -82,41 +84,52 @@
                     </p>
                 </div>
             </section>
-        </article>
+        </section>
 
-        <!-- My projects -->
-        <section class="flex flex-col bento-cards" id="portfolio">
+        <!-- Meus projetos -->
+        <section class="flex flex-col about bento-cards" id="portfolio">
             <header class="flex flex-col items-center">
                 <h2>Meu Portfólio</h2>
                 <p>Meus projetos mais legais</p>
             </header>
-            <section class="flex">
-                <div class="flex flex-col col">
-                    <div class="card project" id="apepe">
+            <section class="flex teste">
+                <div class="flex teste2 justify-center flex-wrap">
+                    
+                    <div class="flex card" id="apepe">
                         <a href="./projects/apepe.html" target="_blank">
                             <div class="overlay">
-                                <h4 style="color: #171717;">Apepê</h4>
+                                <h4>Apepê</h4>
                                 <p>
                                     O apepê é um aplicativo criado para simplificar a vida de quem mora em condomínios. Com uma interface intuitiva e moderna, ele torna mais fácil o gerenciamento do dia a dia, como o recebimento de encomendas, a reserva de áreas comuns e o controle de acesso. Além disso, o app conta com uma rede integrada de parceiros, permitindo que moradores solicitem serviços e comprem produtos diretamente pela plataforma, tudo em um só lugar.
                                 </p>
                             </div>
                         </a>
                     </div>
-                    <a href="./projects/apepe-ds.html" target="_blank">
-                        <div class="card project" id="apepe-ds">
+        
+                    <div class="card" id="apepe-ds">
+                        <a href="./projects/apepe-ds.html" target="_blank">
                             <div class="overlay">
                                 <h4>Design System Apepê</h4>
                                 <p>
                                     Um bom aplicativo começa com um design system sólido. Por isso, criamos o Apepê DS, um guia que orienta as decisões de design, componentes visuais e tom de voz do produto, garantindo consistência, escalabilidade e uma experiência alinhada em todos os pontos de contato.
                                 </p>
                             </div>
-                        </div>
-                    </a>
-                </div>
-            
-                <div class="flex flex-col col">
-                    <div class="card project" id="blix">
-                        <a href="./projects/blix.html" style="color: #171717;" target="_blank">
+                        </a>
+                    </div>
+
+                    <div class="card" id="apepe-taxonomia">
+                        <a href="./projects/blix.html" target="_blank">
+                            <div class="overlay">
+                                <h4>Taxonomia Apepê</h4>
+                                <p>
+                                    lorem ipsum
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card" id="blix">
+                        <a href="./projects/blix.html" target="_blank">
                             <div class="overlay">
                                 <h4>Blix</h4>
                                 <p>
@@ -125,12 +138,13 @@
                             </div>
                         </a>
                     </div>
+                
                 </div>
             </section>
         </section>
 
-        <!-- My Skills -->
-        <section class="flex flex-row skills" id="competencias">
+
+        <section class="flex justify-around skills" id="competencias">
             <div class="card">
                 <h4>Hard Skills</h4>
                 <ul>
@@ -173,36 +187,39 @@
                     <li>Design Thinking</li>
                 </ul>
             </div>
-        </section>
+        </section> 
 
-        <!-- Degree -->
-         <section class="flex flex-col skills items-center" id="formacao">
+
+        <section class="flex about bento-cards flex-col items-center" id="formacao">
             <header class="flex flex-col items-center">
                 <h2>Formação</h2>
                 <p>Um pouco da minha trajetória</p>
             </header>
-            <section class="flex ">
-                <div class="flex flex-col">
+            
+            <section class="flex teste">
+                <div class="flex teste2 justify-center flex-wrap">
+                    
                     <div class="card">
                         <h4>MBA em Tecnologia & Inovação</h4>
                         <p>
                             MBA realizado no Centro Paula Souza (FATEC-SP) para formação de líderes em transformação digital CDOs (Chief Digital Officer).
                         </p>
                     </div>
+                    
                     <div class="card">
                         <h4>Babson Build Program</h4>
                         <p>
                             Extensão internacional em empreendedorismo no Babson College, instituição eleita por 20 anos consecutivos como a melhor faculdade de empreendedorismo do mundo.
                         </p>
                     </div>
-                </div>
-                <div class="flex flex-col">
+
                     <div class="card">
                         <h4>Sistemas para Internet</h4>
                         <p>
                             Graduação Tecnóloga realizada na faculdade FIAP. O foco do curso é formar profissionais para o desenvolvimento de aplicações Web, Mobile e startups.
                         </p>
                     </div>
+                    
                     <div class="card">
                         <h4>Redes de computadores</h4>
                         <p>
@@ -211,9 +228,9 @@
                     </div>
                 </div>
             </section>
-         </section>
+        </section> 
 
-         <section class="flex flex-col items-center skills">
+        <section class="flex flex-col about bento-cards items-center">
             <header class="flex flex-col items-center">
                 <h2>Currículo</h2>
                 <p>
@@ -221,31 +238,36 @@
                 </p>
             </header>
             <div class="flex justify-center items-center">
-                <a href="" class="btn">
+                <a href="./assets/pdf/Currículo - Cirilo Souza.pdf" class="btn" download target="_blank">
                     <span>Baixar currículo</span>
                 </a>
             </div>
-         </section>
+        </section>
     </main>
 
-    <footer class="flex justify-center">
-        <section class="flex nav-foot">
-            <img src="./assets/images/fav.svg">
-            <nav class="flex justify-around items-center">
+    <footer class="flex flex-col justify-center">
+        <div class="flex justify-around items-center">
+            <figure>
+                <img src="./assets/images/fav.svg" alt="">
+            </figure>
+            <nav class="flex flex-col nav-foot items-center">
                 <ul class="flex flex-wrap">
-                <li><a href="#sobre">Sobre mim</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#competencias">Competências</a></li>
-                <li><a href="#formacao">Formação</a></li>
-                <li><a href="#contato">Contato</a></li>
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#competencias">Competências</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="https://wa.me/+5511984889345" target="_blank">Contato</a></li>
                 </ul>
             </nav>
-        </section>
-        <span class="flex justify-center items-center">
-            <a href="https://www.linkedin.com/in/cirilosouza/" target="_blank">
-                <svg enable-background="new 0 0 56.693 56.693" height="42px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="42px" fill="#8C8C8C" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M30.071,27.101v-0.077c-0.016,0.026-0.033,0.052-0.05,0.077H30.071z"/><path d="M49.265,4.667H7.145c-2.016,0-3.651,1.596-3.651,3.563v42.613c0,1.966,1.635,3.562,3.651,3.562h42.12   c2.019,0,3.654-1.597,3.654-3.562V8.23C52.919,6.262,51.283,4.667,49.265,4.667z M18.475,46.304h-7.465V23.845h7.465V46.304z    M14.743,20.777h-0.05c-2.504,0-4.124-1.725-4.124-3.88c0-2.203,1.67-3.88,4.223-3.88c2.554,0,4.125,1.677,4.175,3.88   C18.967,19.052,17.345,20.777,14.743,20.777z M45.394,46.304h-7.465V34.286c0-3.018-1.08-5.078-3.781-5.078   c-2.062,0-3.29,1.389-3.831,2.731c-0.197,0.479-0.245,1.149-0.245,1.821v12.543h-7.465c0,0,0.098-20.354,0-22.459h7.465v3.179   c0.992-1.53,2.766-3.709,6.729-3.709c4.911,0,8.594,3.211,8.594,10.11V46.304z"/></g></svg>
-            </a>
-        </span>
+            <figure>
+                <span class="flex justify-center items-center">
+                    <a href="https://www.linkedin.com/in/cirilosouza/" target="_blank">
+                        <svg enable-background="new 0 0 56.693 56.693" height="42px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="42px" fill="#8C8C8C" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M30.071,27.101v-0.077c-0.016,0.026-0.033,0.052-0.05,0.077H30.071z"/><path d="M49.265,4.667H7.145c-2.016,0-3.651,1.596-3.651,3.563v42.613c0,1.966,1.635,3.562,3.651,3.562h42.12   c2.019,0,3.654-1.597,3.654-3.562V8.23C52.919,6.262,51.283,4.667,49.265,4.667z M18.475,46.304h-7.465V23.845h7.465V46.304z    M14.743,20.777h-0.05c-2.504,0-4.124-1.725-4.124-3.88c0-2.203,1.67-3.88,4.223-3.88c2.554,0,4.125,1.677,4.175,3.88   C18.967,19.052,17.345,20.777,14.743,20.777z M45.394,46.304h-7.465V34.286c0-3.018-1.08-5.078-3.781-5.078   c-2.062,0-3.29,1.389-3.831,2.731c-0.197,0.479-0.245,1.149-0.245,1.821v12.543h-7.465c0,0,0.098-20.354,0-22.459h7.465v3.179   c0.992-1.53,2.766-3.709,6.729-3.709c4.911,0,8.594,3.211,8.594,10.11V46.304z"/></g></svg>
+                    </a>
+                </span>
+            </figure>
+        </div>
+        <p style="color: #888; font-size: 0.8rem;">&copy; 2025 cirilo.design</p>
     </footer>
 </body>
 </html>

@@ -4,52 +4,102 @@
 @import url(./nav.css);
 @import url(./article.css);
 
-.menu {width: 100%;}
-
 .hero {
-    width: 100%;
-    height: 80vh;
     background-color: #171717;
-    position:static
-}
-
-.hero header {
-    width: 50%;
-    color: #e9e9e9;
-    position: relative;
-
-    h1 {font-size: 4.3rem;}
     
-    div {
-        width: 110%;
-        position: absolute;
-        left: 5em;
+    header {
+        color: #e9e9e9;
+    
+        h1 {font-size: 4.3rem;}
         
-        span {
-            width: 100%;
-            font-size: 1.62rem;
-            letter-spacing: 0.5px;
-            color: #171717;
-            background-color: #FEF100;
-            padding: 0.5rem;
+        div {
+            span {
+                width: 100%;
+                font-size: 1.62rem;
+                letter-spacing: 0.5px;
+                color: #171717;
+                background-color: #FEF100;
+                padding: 0.5rem;
+            }
         }
     }
-
-}
-
-.hero figure {
-    width: 100%;
-    height: 100%;
+    
+    figure {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .marquee {
+    text-align: center;
     width: 100%;
-    padding: 4rem 8rem;
-    box-sizing: border-box;
-
-    h2 {text-align: center;}
 }
 
+.about{width: 100%;}
+
+.bento-cards {gap: 1rem;}
+
+.skills {
+    width: 100%;
+
+    .card {
+        gap: 1rem;
+        padding: 1rem;
+        border: none;
+        background-color: #fff;
+
+        li {
+            list-style-type: none;
+        }
+    }
+}
+
+.btn {
+    width: 200px;
+    height: 56px;
+    background-color: #171717;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 20px rgba(23, 23, 23, 0.3);
+    color: #ececec;
+    text-decoration: none;
+  }
+
+  footer {
+    background: #f5f5f5;
+    padding: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+
+    .nav-foot {
+        width: 100%;
+        padding: 0.5rem;
+        list-style: none;
+        font-family: 'Instrument Sans', sans-serif;
+        font-weight: 300;
+        font-size: 1rem;
+        box-sizing: border-box;
+    
+        li {
+            min-width: 10%;
+            margin: 0 1rem;
+            list-style-type: none;
+            text-align: center;
+        }
+          
+        li a {
+            color: #888;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+    }
+  }
+
+/* 
 .article {
     width: 100%;
     box-sizing: border-box;
@@ -112,112 +162,196 @@
 
 }
 
-.nav-foot {
-    width: 100%;
-    padding: 0.5rem;
-    list-style: none;
-    font-family: 'Instrument Sans', sans-serif;
-    font-weight: 300;
-    font-size: 1rem;
-    box-sizing: border-box;
 
-    li {
-        min-width: 10%;
-        margin: 0 1rem;
-        list-style-type: none;
-        text-align: center;
-    }
-      
-    li a {
-        color: #171717;
-        text-decoration: none;
-        transition: color 0.3s ease;
-    }
-  }
 
-  .project {
+
+
+
+
+
+
+    footer {
+    background: #f5f5f5;
+    padding: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+  } */
+
+
+/* Responsive */
+@media (min-width: 360px) {
+    h2 {font-size: 1.65rem;}
+
+    header {
+        width: 100%;
+        height: 100vh;
+        
+        .menu, .hero {width: 100%;}
+
+        .hero {
+            height: 100%;
+            padding: 1rem;
+
+            div {
+                width: 100%;
+                height: 100%;
+
+                h1 {line-height: 4rem;}
+            }
+            
+            figure {order: -1;}
+        }
+    }
+
+    main {
+        padding: 4rem 1rem;
+        width: 100%;
+        height: auto;
+        margin-top: 276px;
+        gap: 3rem;       
+
+        .marquee {
+            padding: 1rem;
+
+            br {display: none;}
+            
+        }
+
+        .about {
+            gap: 1.5rem;
+
+            header {
+                width: 100%;
+                height: auto;
+            }
+
+            div {padding: 1rem;}
+
+            figure {
+                width: 100%;
+                height: 300px;
+            }
+        }
+
+        .skills {
+            .card {width: 100%;}
+        }
+
+        /* .bento-cards {
+            .overlay {display: none;}
+        } */
+    }
+
+}
+
+@media (min-width: 375px) {}
+@media (min-width: 411px) {}
+@media (min-width: 768px) {
+    .menu {height: auto;}
+
+    .hero {
+        width: 100%;
+        flex-direction: column;
+        
+        header {
+            height: auto;
+
+            div {
+                width: auto;
+                h1 {font-size: 4rem;}
+            }
+
+            br {display: none;}
+        }
+
+        figure {order: -1;}
+
+    }
+
+    main {
+        margin-top: 0;
+
+        .about {
+            flex-direction: column;
+
+            div {padding: 1rem;}
+
+            figure {
+                width: 100%;
+                height: 550px;
+            }
+        }
+    }
+}
+
+@media (min-width: 912px) {
+    .hero {
+        flex-direction: row;
+        
+        header {
+            order: -1;
+
+            div {
+                position: relative;
+                left: 6rem; 
+
+                span {font-size: 1.5rem;}
+            }            
+        }
+    }
+
+    main {
+        .marquee {
+            padding: 1rem 2rem;
+
+            h2 {font-size: 2rem;}
+        }
+
+        .about {
+            flex-direction: row;
+
+            figure, section {
+                width: 50%;
+            }
+        }
+
+        .bento-cards {
+            flex-direction: column;
+
+            .teste {
+                width: 100%;
+                
+                .teste2 {gap: 0.5rem;}
+            }
+
+            #apepe {background-image: url(../images/apepe.png);}
+            #blix {background-image: url(../images/Blix.png);}        
+            #apepe-ds {background-image: url(../images/apepe-ds.png);}
+            #apepe-taxonomia {background-image: url(../images/apepe.png);}
+        
+            #apepe, #blix, #apepe-ds, #apepe-taxonomia {
+                background-size: cover;
+                background-position: bottom;
+                position: relative;
+            }
+        }
+
+        .skills {
+            .card {width: 32%;}
+        }
+    } 
+}
+@media (min-width: 1200px){}
+@media (min-width: 1400px) {}
+
+/* .project {
     background-size: cover;
     background-position: bottom left;
     position: relative;
     color: #171717;
     height: 100%;
     min-height: 240px;
-  }
+}          
 
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #fef100;
-    box-sizing: border-box;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    line-height: 1.5rem;
-  }
-  
-  .project:hover .overlay {
-    opacity: 1;
-  }
-
-
-
-  .btn {
-    width: 200px;
-    height: 56px;
-    background-color: #171717;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0.5rem;
-    box-shadow: 5px 5px 20px rgba(23, 23, 23, 0.3);
-    color: #ececec;
-    text-decoration: none;
-  }
-
-  
-
-  #apepe {background-image: url(../images/apepe.png);}
-  #blix {background-image: url(../images/Blix.png);}        
-  #apepe-ds {background-image: url(../images/apepe-ds.png);}
-
-  footer {
-    background: #f5f5f5;
-    padding: 2rem;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #888;
-  }
-
-
-/* Responsive */
-@media (max-width: 800px) {
-    .hero {height: 100vh;}
-    .hero header{
-        width: 100%;
-        height: 50%;
-        order: 2;
-    }    
-
-    .marquee {padding: 1rem;}
-    .bento-cards {width: 100%;}
-    
-
-    .article figure {width: 100%;}
-    .article section {width: 100%;}
-
-    .nav-foot {
-        width: 100%;
-        align-items: center;
-        img {width: 5rem;}
-    }
-
-}
+ */

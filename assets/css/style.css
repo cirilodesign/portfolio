@@ -1,10 +1,11 @@
 /* Erazing */
 *{
-    margin: 0; padding: 0;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
-    box-sizing: border-box;
     max-width: 1920px;
     font-size: 16px;
 }
@@ -48,4 +49,7 @@ body{
 .content-baseline  { align-content: baseline; }
 
 /* Responsive */
-@media (max-width: 800px) {.flex {flex-direction: column;}}
+@media (max-width: 767px) {
+    .flex {flex-direction: column;}
+}
+
